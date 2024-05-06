@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="../assets/images/logo_visual_black.png" rel="shortcut icon" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- Slick JS -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <!-- Local Style -->
+  <link rel="stylesheet" href="./assets/css/clubx.css" />
+  <!-- <link rel="stylesheet" href="./assets/css/clubxLagi.css" /> -->
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+
+  <title>CLUBX</title>
+</head>
+
+<body>
+  <main class="overflow-hidden">
+    <!-- Rian Start -->
+    <section class="jumbotron position-relative">
+      <video src="assets/video/bgVideo_headBanner.mp4" type="video/mp4" class="w-100 position-absolute" loop muted
+        autoplay></video>
+      <header class="px-3 pt-5 position-relative d-flex justify-content-between gap-2 px-md-5">
+        <a href="../index.html" class="text-uppercase text-white link-back-site" title="Back to main site">
+          <img src="assets/images/icon_back.png" alt="back" width="48" />
+        </a>
+        <!-- <a
+            href="#"
+            class="position-relative btn-download text-white btn-downloads"
+            title="Download CLUBX PC"
+          >
+            <img
+              src="assets/images/bgButton_download-1.png"
+              alt="download"
+              class="position-absolute w-100 h-100"
+            />
+            <div
+              class="position-relative h-100 wrapper-text-download d-flex align-items-center gap-3"
+            >
+              <img
+                src="assets/images/icon_download.png"
+                alt="download"
+                width="48"
+              />
+              <div
+                class="d-flex flex-column align-items-center justify-content-center"
+              >
+                <span class="text-uppercase fw-bold text-download"
+                  >Clubx PC</span
+                >
+                <span class="text-uppercase text-beta">Download</span>
+              </div>
+            </div>
+          </a> -->
+      </header>
+
+      <div
+        class="max-container position-relative d-flex flex-column justify-content-center align-items-center wrapper-content-clubx px-3">
+        <img src="assets/images/logo_clubx.png" alt="clubx" width="400" />
+        <p class="title text-uppercase title-big-size text-white mt-4 text-center f-title fw-bold">
+          Welcome to Club X
+        </p>
+        <p class="fs-2 text-center">Feel the real sensation!</p>
+        <div class="app-download-wrapper mt-3 d-flex gap-2">
+          <a href="" class="disabled"><img src="./assets/images/bgButton_googlePlay.png" alt="" /></a>
+          <a href="" class="disabled"><img src="./assets/images/bgButton_appStore.png" alt="" /></a>
+          <a href="" class="disabled"><img src="./assets/images/bgButton_metaQuest.png" alt="" /></a>
+          <a href="https://www.xrun.run/clubx_homepage/ClubX_PCversion.zip" download><img
+              src="./assets/images/bgButton_pcVersion.png" alt="" /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Download Section -->
+    <section id="footerDownloadSection">
+      <div class="d-flex p-3 max-container">
+        <a href="https://www.instagram.com/clubx_metaverse/" target="_blank"
+          class="d-flex w-100 align-items-center justify-content-center">
+          <img src="./assets/images/icon_instagram.png" />
+          <p class="mb-0 text-white f-subtitle mx-3">Follow Us</p>
+        </a>
+        <a href="https://www.youtube.com/watch?v=tKVAVojVDY8" target="_blank"
+          class="d-flex w-100 align-items-center justify-content-center">
+          <img src="./assets/images/icon_youtube.png" />
+          <p class="mb-0 text-white f-subtitle mx-3">Watch on Youtube</p>
+        </a>
+      </div>
+    </section>
+    <!-- System Requirements Modal -->
+    <div class="modal fade" id="systemReq" tabindex="-1" aria-labelledby="systemReqLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center border-none">
+            <h1 class="modal-title fs-3 fw-bold mt-2" id="systemReqLabel">
+              CLUB-X System Requirements
+            </h1>
+          </div>
+          <div class="modal-body d-flex row">
+            <div class="col-md-6 p-4">
+              <p>Minimum Requirements</p>
+              <div>
+                <ul>
+                  <li>
+                    <span class="fw-bold">CPU : </span>
+                    <span class="fw-light">Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD
+                      Phenom 9850 Qu ad-Core Processor (4 CPUs) @ 2.5GHz</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">CPU Speed : </span>
+                    <span class="fw-light">Info</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">RAM : </span>
+                    <span class="fw-light">8 GB</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Video Card : </span>
+                    <span class="fw-light">NVIDIA RTX 2050 </span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Dedicated Video RAM : </span>
+                    <span class="fw-light">2 GB</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Pixel Shader : </span>
+                    <span class="fw-light">4.0</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Vertex Shader : </span>
+                    <span class="fw-light">4.0</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">OS : </span>
+                    <span class="fw-light">Windows 10 64 Bit, Windows 8.1 64 Bit, Windows 8 64
+                      Bit, Windows 7 64 Bit Service Pack 1, Windows Vista 64
+                      Bit Service Pack 2*</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Free Disk Space : </span>
+                    <span class="fw-light">3 GB</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Sound Card : </span>
+                    <span class="fw-light">100% DirectX 10 Compatible</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 p-4">
+              <p>Recommended Requirements</p>
+              <div>
+                <ul>
+                  <li>
+                    <span class="fw-bold">CPU : </span>
+                    <span class="fw-light">Intel Core i5 3470 @ 3.2GHz (4 CPUs) / AMD X8 FX-8350 @
+                      4GHz (8 CPUs)</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">CPU Speed : </span>
+                    <span class="fw-light">Info</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">RAM : </span>
+                    <span class="fw-light">16 GB</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Video Card : </span>
+                    <span class="fw-light">NVIDIA RTX 3050</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Dedicated Video RAM : </span>
+                    <span class="fw-light">4 GB</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Pixel Shader : </span>
+                    <span class="fw-light">5.0</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Vertex Shader : </span>
+                    <span class="fw-light">5.0</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">OS : </span>
+                    <span class="fw-light">Windows 10 64 Bit, Windows 8.1 64 Bit, Windows 8 64
+                      Bit, Windows 7 64 Bit Service Pack 1</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Free Disk Space : </span>
+                    <span class="fw-light">3 GB</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Sound Card : </span>
+                    <span class="fw-light">100% DirectX 10 Compatible</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center border-none mb-2">
+            <button type="button" class="btn btn-info fw-bold text-white border-none"
+              style="background-color: #3d00d4; padding: 4px 100px" data-bs-dismiss="modal">
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <!-- <section id="contactSection">
+        <div
+          class="position-relative d-flex justify-content-center align-items-center gap-3"
+        >
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary dropdown-toggle bg-transparent border-none"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="./assets/images/icon_instagram.png" />
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://www.instagram.com/xrun_world/"
+                  target="_blank"
+                  >XRUN World</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://www.instagram.com/xrun_korea/"
+                  target="_blank"
+                  >XRUN Korea</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://www.instagram.com/xrun_indonesia/"
+                  target="_blank"
+                  >XRUN Indonesia</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="line-separator"></div>
+          <a href="https://www.facebook.com/XRUNFOUNDATION/" target="_blank"
+            ><img src="./assets/images/icon_facebook.png"
+          /></a>
+          <div class="line-separator"></div>
+          <a
+            href="https://www.youtube.com/channel/UCZjUyLCCEYeQo0zw-jjaJMA/featured"
+            target="_blank"
+            ><img src="./assets/images/icon_youtube.png"
+          /></a>
+          <div class="line-separator"></div>
+          <a href="https://t.me/xrunmetaverseNFT" target="_blank"
+            ><img src="./assets/images/icon_telegram.png"
+          /></a>
+          <div class="line-separator"></div>
+          <a href="https://twitter.com/FoundationXrun" target="_blank"
+            ><img src="./assets/images/icon_x.png"
+          /></a>
+          <div class="line-separator"></div>
+          <a href="https://github.com/XrunMeta/CLUBX" target="_blank"
+            ><img src="./assets/images/icon_github.png"
+          /></a>
+        </div>
+      </section> -->
+
+    <!-- Main Footer -->
+    <footer id="mainFooter">
+      <!-- <div class="footer-head d-flex justify-content-center pt-5">
+          <img src="./assets/images/logo_w.png" />
+          <a
+            href="./assets/files/XRUN_whitepaperv2023.pdf"
+            download
+            class="download-paper-wrapper d-flex justify-content-center"
+          >
+            <img src="./assets/images/icon_paperDownload.png" />
+            <p class="mb-0">White Paper</p>
+          </a>
+          <a
+            href="./assets/files/XRUN IR 2023 .pdf"
+            download
+            class="download-paper-wrapper d-flex justify-content-center"
+          >
+            <img src="./assets/images/icon_paperDownload.png" />
+            <p class="mb-0">IR</p>
+          </a>
+        </div>
+        <div class="footer-content mt-4 pb-5">
+          <section id="contactSection">
+            <div
+              class="position-relative d-flex justify-content-center align-items-center gap-3"
+            >
+              <div class="dropdown">
+                <a
+                  class="btn btn-secondary dropdown-toggle bg-transparent border-none"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="./assets/images/icon_instagram.png" />
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.instagram.com/xrun_world/"
+                      target="_blank"
+                      >XRUN World</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.instagram.com/xrun_korea/"
+                      target="_blank"
+                      >XRUN Korea</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.instagram.com/xrun_indonesia/"
+                      target="_blank"
+                      >XRUN Indonesia</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="line-separator"></div>
+              <a href="https://www.facebook.com/XRUNFOUNDATION/" target="_blank"
+                ><img src="./assets/images/icon_facebook.png"
+              /></a>
+              <div class="line-separator"></div>
+              <a
+                href="https://www.youtube.com/channel/UCZjUyLCCEYeQo0zw-jjaJMA/featured"
+                target="_blank"
+                ><img src="./assets/images/icon_youtube.png"
+              /></a>
+              <div class="line-separator"></div>
+              <a href="https://t.me/xrunmetaverseNFT" target="_blank"
+                ><img src="./assets/images/icon_telegram.png"
+              /></a>
+              <div class="line-separator"></div>
+              <a href="https://twitter.com/FoundationXrun" target="_blank"
+                ><img src="./assets/images/icon_x.png"
+              /></a>
+              <div class="line-separator"></div>
+              <a href="https://github.com/XrunMeta/CLUBX" target="_blank"
+                ><img src="./assets/images/icon_github.png"
+              /></a>
+            </div>
+          </section>
+          <p class="mb-0 text-center mt-4">
+            FirstFloor, First St Vincent Bank Ltd Building, James Street,
+            Kingstown. St. Vincent and the Grenadines. personal data privacy
+            management : Hyukil-Kwon
+            <br />
+            © 2019 XRUN LLC. All Rights Reserved.
+          </p>
+          <p class="mb-0 mt-3 text-center">
+            Private BugBounter Program Now Available (Post your resume to
+            xrun@xrun.run for companion)
+          </p>
+        </div> -->
+
+      <div class="d-block max-container">
+        <div class="d-flex justify-content-between footer-above-wrapper">
+          <div class="d-flex p-3 tos-wrapper">
+            <a href="" class="d-flex align-items-center">
+              <p class="text-white mb-0 f-desc">Terms of Use</p>
+            </a>
+            <div class="line-separator"></div>
+            <a href="" class="d-flex align-items-center">
+              <p class="text-white mb-0 f-desc">Privacy Policy</p>
+            </a>
+            <div class="line-separator"></div>
+            <a href="" class="d-flex align-items-center">
+              <p class="text-white mb-0 f-desc">CLUBX Support</p>
+            </a>
+          </div>
+          <div class="d-flex align-items-center p-3 socmed-wrapper">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle bg-transparent border-none" href="#" role="button"
+                id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="footer-socmed-icon" src="./assets/images/icon_instagram.png" />
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="https://www.instagram.com/xrun_world/" target="_blank">XRUN World</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://www.instagram.com/xrun_korea/" target="_blank">XRUN Korea</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://www.instagram.com/xrun_indonesia/" target="_blank">XRUN
+                    Indonesia</a>
+                </li>
+              </ul>
+            </div>
+            <div class="line-separator"></div>
+            <a href="https://www.facebook.com/XRUNFOUNDATION/" target="_blank"><img class="footer-socmed-icon"
+                src="./assets/images/icon_facebook.png" /></a>
+            <div class="line-separator"></div>
+            <a href="https://www.youtube.com/channel/UCZjUyLCCEYeQo0zw-jjaJMA/featured" target="_blank"><img
+                class="footer-socmed-icon" src="./assets/images/icon_youtube.png" /></a>
+            <div class="line-separator"></div>
+            <a href="https://t.me/xrunmetaverseNFT" target="_blank"><img class="footer-socmed-icon"
+                src="./assets/images/icon_telegram.png" /></a>
+            <div class="line-separator"></div>
+            <a href="https://twitter.com/FoundationXrun" target="_blank"><img class="footer-socmed-icon"
+                src="./assets/images/icon_x.png" /></a>
+            <div class="line-separator"></div>
+            <a href="https://github.com/XrunMeta/CLUBX" target="_blank"><img class="footer-socmed-icon"
+                src="./assets/images/icon_github.png" /></a>
+          </div>
+        </div>
+        <div class="d-flex copyright-wrapper">
+          <p class="text-white mb-0 p-3 f-desc">
+            © 2019 XRUN LLC. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="scrollToTop"><img src="./assets/images/icon_arrow.png" alt="" /></a>
+    <!-- Bilal End -->
+  </main>
+
+  <script src="./assets/scripts/clubx.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
+  <!-- Custom Script -->
+  <script>
+    $(document).ready(function () {
+      $(".slick-wrapper").slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true,
+        responsive: [
+          {
+            breakpoint: 769,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+
+      $(".nfts-slick-container").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true,
+        responsive: [
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+
+      // $(".game-mode-wrapper").slick({
+      //   infinite: true,
+      //   slidesToShow: 1,
+      //   slidesToScroll: 1,
+      //   autoplay: true,
+      //   autoplaySpeed: 5000,
+      //   pauseOnHover: true,
+      //   responsive: [
+      //     {
+      //       breakpoint: 600,
+      //       settings: {
+      //         slidesToShow: 1,
+      //         slidesToScroll: 1,
+      //       },
+      //     },
+      //   ],
+      // });
+
+      // $("#rankTable").DataTable({
+      //   order: [[0, "asc"]],
+      // });
+      // $("#rankTable2").DataTable({
+      //   order: [[0, "asc"]],
+      // });
+
+      $("#btnNFTS").click(() => {
+        // alert("nfts");
+        $("#btnNFTS").addClass("active");
+        $("#btnCelebrity").removeClass("active");
+      });
+
+      $("#btnCelebrity").click(() => {
+        // alert("celebrity");
+        $("#btnCelebrity").addClass("active");
+        $("#btnNFTS").removeClass("active");
+      });
+
+      function responsiveTableRank() {
+        if ($(document).width() <= 1100) {
+          $("#rankTable tbody").empty();
+          for (var i = 1; i <= 10; i++) {
+            $("#rankTable tbody").append(
+              `
+              <tr>
+                <td>
+                  <div class="d-flex rank-data-title">
+                    <img
+                      class="rank-profile d-flex align-items-center justify-content-center"
+                      src="./assets/images/profileTest.jpg"
+                      alt=""
+                    />
+                    <div class="d-grid mx-4">
+                      <div class="d-flex align-items-center">
+                        <p class="mb-0 f-desc fw-bold">` +
+              i +
+              `</p>
+                        <img
+                          class="rank-arrow"
+                          src="./assets/images/icon_miniArrow.png"
+                        />
+                      </div>
+                      <p class="mb-0 f-desc">LOREM IPSUM</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-block">
+                    <div class="d-flex justify-content-end">
+                      <p class="mb-0 f-desc fw-bold">1000</p>
+                      <p class="mb-0 f-desc fw-bold">&nbsp;XRUN</p>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <p class="mb-0 f-desc">≈&nbsp;</p>
+                      <p class="mb-0 f-desc">130914</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            `
+            );
+          }
+
+          $("#rankTable").DataTable({
+            order: [[0, "asc"]],
+          });
+
+          $("#rankTable2").hide();
+        } else {
+          $("#rankTable tbody, #rankTable2 tbody").empty();
+          for (var i = 1; i <= 5; i++) {
+            $("#rankTable tbody").append(
+              `
+              <tr>
+                <td>
+                  <div class="d-flex rank-data-title">
+                    <img
+                      class="rank-profile d-flex align-items-center justify-content-center"
+                      src="./assets/images/profileTest.jpg"
+                      alt=""
+                    />
+                    <div class="d-grid mx-4">
+                      <div class="d-flex align-items-center">
+                        <p class="mb-0 f-desc fw-bold">` +
+              i +
+              `</p>
+                        <img
+                          class="rank-arrow"
+                          src="./assets/images/icon_miniArrow.png"
+                        />
+                      </div>
+                      <p class="mb-0 f-desc">LOREM IPSUM</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-block">
+                    <div class="d-flex justify-content-end">
+                      <p class="mb-0 f-desc fw-bold">1000</p>
+                      <p class="mb-0 f-desc fw-bold">&nbsp;XRUN</p>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <p class="mb-0 f-desc">≈&nbsp;</p>
+                      <p class="mb-0 f-desc">130914</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            `
+            );
+          }
+          $("#rankTable").DataTable({
+            order: [[0, "asc"]],
+          });
+
+          $("#rankTable2 tbody").empty();
+          for (var i = 6; i <= 10; i++) {
+            $("#rankTable2 tbody").append(
+              `
+              <tr>
+                <td>
+                  <div class="d-flex rank-data-title">
+                    <img
+                      class="rank-profile d-flex align-items-center justify-content-center"
+                      src="./assets/images/profileTest.jpg"
+                      alt=""
+                    />
+                    <div class="d-grid mx-4">
+                      <div class="d-flex align-items-center">
+                        <p class="mb-0 f-desc fw-bold">` +
+              i +
+              `</p>
+                        <img
+                          class="rank-arrow"
+                          src="./assets/images/icon_miniArrow.png"
+                        />
+                      </div>
+                      <p class="mb-0 f-desc">LOREM IPSUM</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-block">
+                    <div class="d-flex justify-content-end">
+                      <p class="mb-0 f-desc fw-bold">1000</p>
+                      <p class="mb-0 f-desc fw-bold">&nbsp;XRUN</p>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <p class="mb-0 f-desc">≈&nbsp;</p>
+                      <p class="mb-0 f-desc">130914</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            `
+            );
+          }
+          $("#rankTable2").DataTable({
+            order: [[0, "asc"]],
+          });
+        }
+      }
+
+      responsiveTableRank();
+
+      // $(window).resize(function () {
+      //   responsiveTableRank();
+      // });
+    });
+  </script>
+</body>
+
+</html>

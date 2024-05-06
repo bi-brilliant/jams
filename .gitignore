@@ -10,3 +10,5 @@ controller
 model
 m
 announcement
+*.zip
+*.pdf
